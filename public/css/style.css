@@ -1,0 +1,43 @@
+.counters{
+	margin-right: 30px;
+	font-size: 15px;
+	text-align: center;
+
+}
+
+
+strong{
+display: block;
+font-size: 1em;
+	}
+
+
+.vote{
+	width: 60px;
+	height: 60px;
+	border:1px solid red;
+} 
+
+
+
+.answer{
+width: 60px;
+	height: 60px;
+}
+.status-answered{
+	border: 1px solid green;
+	}
+
+.status-unanswered{
+	border:none;	
+}
+
+
+.status-answered-accepted{
+	background: green;
+}
+
+
+
+
+
