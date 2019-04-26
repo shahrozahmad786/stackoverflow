@@ -14,10 +14,20 @@
                        <div class="media">
                            <div class="media-body">
                                <h3 class="mt-0">
-                                   {{$question->title}}
-                                   {{str_limit($question->body,250)}}
-                               </h3>
-                           </div>
+
+                            <a href="{{$question->url}}" class="">{{$question->title}}</a></h3>
+                            <p class="lead">
+                                
+                           Asked By
+                           <a href="{{$question->user->url}}">{{$question->user->name}}</a>
+
+                           <small class="text-muted">{{$question->created_date}}</small>
+
+                            </p>
+
+                                   
+                            {{str_limit($question->body,250)}}
+                            </div>
                        </div>
                        <hr>
                     @endforeach
