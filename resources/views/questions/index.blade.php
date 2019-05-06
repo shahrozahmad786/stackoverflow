@@ -13,7 +13,18 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">All Questions</div>
+                <div class="card-header">
+                  <div class="d-flex align-items-center">
+                      <h2>  All Questions</h2> 
+                      <div class="ml-auto">
+
+                        <a href="{{ route('questions.create') }}" class="btn btn-outline-secondary">
+                        Ask Questions</a>
+                      </div>
+                    
+                  </div>        
+              
+              </div>
 
                 <div class="card-body">
                     
@@ -33,12 +44,12 @@
                         {{str_plural('answer',$question->votes)}}
                             </div>
 
-                                   <div class="view">
+                        <div class="view">
                                 {{$question->views." ".str_plural('view',$question->views)}}
-                            </div>
+                        </div>
                             
                         </div>
-                           <div class="media-body">
+                        <div class="media-body">
                                <h3 class="mt-0">
 
                             <a href="{{$question->url}}">
@@ -54,7 +65,7 @@
 
                                    
                             {{str_limit($question->body,250)}}
-                            </div>
+                      </div>
                        </div>
                        <hr>
                     
