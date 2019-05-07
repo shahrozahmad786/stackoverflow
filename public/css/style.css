@@ -38,6 +38,10 @@ width: 60px;
 }
 
 
+form.form-delete{
+	display: inline;
+}
+
 
 
 
